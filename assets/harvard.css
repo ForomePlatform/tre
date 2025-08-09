@@ -1,0 +1,52 @@
+/* ---- Harvard palette (Material custom colors) ---- */
+:root {
+  /* Harvard Crimson */
+  --harvard-crimson: #A51C30;       /* primary */
+  --harvard-crimson-600: #8e1829;   /* hover/active */
+  --harvard-accent: #174A7E;        /* optional accent: deep blue */
+  --harvard-accent-600: #123a62;
+}
+
+/* Light scheme */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: var(--harvard-crimson);
+  --md-primary-fg-color--light: color-mix(in srgb, var(--harvard-crimson) 85%, white);
+  --md-primary-fg-color--dark: var(--harvard-crimson-600);
+  --md-accent-fg-color: var(--harvard-accent);
+  --md-accent-fg-color--transparent: color-mix(in srgb, var(--harvard-accent) 20%, transparent);
+
+  /* optional: subtle headings weight & link color */
+  --md-typeset-a-color: var(--harvard-accent);
+  --md-code-bg-color: #f6f8fa;
+}
+
+/* Dark scheme (slate) */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: var(--harvard-crimson);
+  --md-primary-fg-color--light: color-mix(in srgb, var(--harvard-crimson) 70%, white);
+  --md-primary-fg-color--dark: var(--harvard-crimson-600);
+  --md-accent-fg-color: var(--harvard-accent);
+  --md-accent-fg-color--transparent: color-mix(in srgb, var(--harvard-accent) 20%, transparent);
+
+  /* code/bg tweaks in dark */
+  --md-code-bg-color: #0e1116;
+}
+
+/* Optional: toolbar title weight & nav tab emphasis */
+.md-header__title {
+  font-weight: 600;
+}
+.md-tabs__link--active {
+  font-weight: 600;
+}
+
+/* Optional: larger h1 for section landing pages */
+.md-typeset h1 {
+  font-size: 2rem;
+}
+
+/* Optional: callouts spacing polish */
+.md-typeset .admonition,
+.md-typeset details {
+  margin: 1.1em 0;
+}
