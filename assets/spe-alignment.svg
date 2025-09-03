@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="300">
+  <rect width="600" height="300" fill="#fdfdfd" stroke="#ccc"/>
+  <text x="300" y="30" text-anchor="middle" font-size="20">SPE Alignment</text>
+  <text x="100" y="70" font-size="14">SPE Requirement</text>
+  <text x="300" y="70" font-size="14">TRE Feature</text>
+  <text x="500" y="70" font-size="14">Framework</text>
+  <line x1="200" y1="60" x2="200" y2="260" stroke="#aaa"/>
+  <line x1="400" y1="60" x2="400" y2="260" stroke="#aaa"/>
+  <text x="100" y="120" font-size="12">No raw export</text>
+  <text x="300" y="120" font-size="12">Output review</text>
+  <text x="500" y="120" font-size="12">Five Safes</text>
+  <text x="100" y="160" font-size="12">Access control</text>
+  <text x="300" y="160" font-size="12">MFA, RBAC</text>
+  <text x="500" y="160" font-size="12">EOSC-ENTRUST</text>
+</svg>
