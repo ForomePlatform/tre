@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="300">
+  <rect width="600" height="300" fill="#ffffff" stroke="#ccc"/>
+  <text x="300" y="30" text-anchor="middle" font-size="20">Reference Case: Climate &amp; Health</text>
+  <rect x="80" y="80" width="120" height="40" fill="#bbdefb" stroke="#1e88e5"/>
+  <text x="140" y="105" text-anchor="middle" font-size="12">Climate Data</text>
+  <rect x="240" y="80" width="120" height="40" fill="#c8e6c9" stroke="#43a047"/>
+  <text x="300" y="105" text-anchor="middle" font-size="12">Air Quality</text>
+  <rect x="400" y="80" width="120" height="40" fill="#ffe0b2" stroke="#fb8c00"/>
+  <text x="460" y="105" text-anchor="middle" font-size="12">Health Records</text>
+  <line x1="140" y1="120" x2="140" y2="200" stroke="#000"/>
+  <line x1="300" y1="120" x2="300" y2="200" stroke="#000"/>
+  <line x1="460" y1="120" x2="460" y2="200" stroke="#000"/>
+  <rect x="200" y="200" width="200" height="40" fill="#f8bbd0" stroke="#c2185b"/>
+  <text x="300" y="225" text-anchor="middle" font-size="12">Integrated TRE Analysis</text>
+</svg>

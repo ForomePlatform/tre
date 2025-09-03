@@ -1,79 +1,67 @@
 site_name: Harvard Research Computing Trusted Research Environment
 site_url: https://foromeplatform.github.io/tre/
 repo_url: https://github.com/ForomePlatform/tre
-edit_uri: blob/main/docs/
+edit_uri: edit/main/docs/
 
 theme:
   name: material
   features:
-    - navigation.tabs          # top horizontal tabs (1st level)
+    - navigation.tabs          # top-level tabs
     - navigation.sections      # grouped left sidebar per tab
     - navigation.expand        # auto-expand current section
     - navigation.top           # sticky header + back-to-top
     - search.suggest
     - search.highlight
-    - content.code.copy        # copy button on code blocks
+    - content.code.copy
+    - content.action.edit
   palette:
-   - scheme: default           # light
-     primary: custom
-     accent: custom
-   - scheme: slate             # optional dark mode
-     primary: custom
-     accent: custom
+    - scheme: default
+      primary: custom
+      accent: custom
+    - scheme: slate
+      primary: custom
+      accent: custom
   icon:
     logo: material/library
     repo: fontawesome/brands/github
+
 extra_css:
   - assets/harvard.css
+
 nav:
-  - "Overview": index.md
+  - Overview: index.md
+  - Trust:
+      - Data Provenance and Compliance: trust/index.md
+  - Research:
+      - Tools and Lifecycle: research/index.md
+  - Environment:
+      - Deployment Blueprint: environment/deployment-blueprint.md
+  - Reference Case:
+      - Project Overview: reference-case/project-overview.md
+  - Team: team/index.md
 
-  - "Trust":
-      - trust/index.md
-      - "Data Provenance": trust/data-provenance.md
-      - "Reproducibility": trust/reproducibility.md
-      - "Security & Access": trust/security-access.md
-      - "Compliance": trust/compliance.md
-
-  - "Research":
-      - research/index.md
-      - "Research Lifecycle": research/research-lifecycle.md
-      - "Data Engineering": research/data-engineering.md
-      - "Analytics Toolkit": research/analytics-toolkit.md
-      - "Federated Access": research/federated-access.md
-
-  - "Environment":
-      - environment/index.md
-      - "Architecture": environment/architecture.md
-      - "Deployment Blueprint": environment/deployment-blueprint.md
-      - "Operations Best Practice": environment/operations-best-practice.md
-
-  - "Reference Case":
-      - reference-case/index.md
-      - "Project Overview": reference-case/project-overview.md
-      - "Implementation Journey": reference-case/implementation-journey.md
-      - "Provenance in Action": reference-case/provenance-in-action.md
-      - "Lessons Learned": reference-case/lessons-learned.md
-
-  - "Team":
-      - team/index.md
-      - "Harvard Research Computing": team/harvard-research-computing.md
-      - "Contributing Partners": team/contributing-partners.md
-
-  - "Resources":
-      - resources/index.md
-      - "Documentation": resources/documentation.md
-      - "Compliance Matrix": resources/compliance-matrix.md
+plugins:
+  - search
+  - autorefs
+  - glightbox
+  - minify:
+      minify_html: true
 
 markdown_extensions:
   - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
   - toc:
       permalink: true
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.highlight
+  - pymdownx.details          # enables ??? collapsible blocks
+  - pymdownx.superfences      # code fences inside details
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
 
 extra:
   social:
