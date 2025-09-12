@@ -30,6 +30,8 @@ extra_css:
 
 nav:
   - Overview: index.md
+#  - Background:
+#      - Data Preparation for Pattern recognition: assets/slides/background/index.html
   - Trust:
       - Data Provenance and Compliance: trust/index.md
   - Research:
@@ -46,6 +48,8 @@ plugins:
   - glightbox
   - minify:
       minify_html: true
+#  - revealjs:
+#      transition: slide   # or fade, convex, concave, none https://revealjs.com/transitions/
 
 markdown_extensions:
   - admonition
