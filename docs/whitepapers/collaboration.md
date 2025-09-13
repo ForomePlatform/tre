@@ -1,5 +1,10 @@
 # TRE Architecture with DSL-Driven Provenance - Internal Collaboration Document
 ## Core Concept
+
+![TRE concept AI recognised.png](..%2Fassets%2FTRE%20concept%20AI%20recognised.png)
+![TRE concept handwriting.png](..%2Fassets%2FTRE%20concept%20handwriting.png)
+![TRE_Architecture_NoArrows.png](..%2Fassets%2FTRE_Architecture_NoArrows.png)
+
 A Trusted Research Environment where every data transformation flows through a Domain-Specific Language (DSL) engine that enforces compliance, captures cell-level provenance, and enables complete reproducibility. The architecture implements defense-in-depth with controlled ingress/egress and medallion-pattern data quality tiers.
 ## Service Architecture Components
 ### Management Layer
